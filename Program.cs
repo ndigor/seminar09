@@ -15,9 +15,10 @@ for (int i = 0; i < charArr.Length; i++)
     }
     if (charArr[i] % 2 == 0)
     {
-        str += charArr[i] + " ";
+
+        str += charArr[i];
     }
 }
 char [] array = str.ToCharArray();
-Console.WriteLine(str);
 
+Console.Write(string.Join(" ", array));
